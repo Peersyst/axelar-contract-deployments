@@ -434,6 +434,92 @@
           "address": "0x6Ae8C8498d5FDA930e6ABeB0E15E5A00471702a7"
         }
       }
+    },
+    "xrpl-evm-sidechain": {
+      "name": "XRPL EVM Sidechain",
+      "id": "xrpl-evm-sidechain",
+      "axelarId": "xrpl-evm-sidechain",
+      "chainId": 1440002,
+      "rpc": "https://rpc.xrplevm.org",
+      "tokenSymbol": "XRP",
+      "confirmations": 1,
+      "gasOptions": {
+        "gasLimit": 8000000
+      },
+      "contracts": {
+        "ConstAddressDeployer": {
+          "address": "0xC8DE97f815222875b54d9F30D0e1408Eb851B1bA",
+          "deployer": "0x612066ec9318250377AF9108F48a375E82e899D0",
+          "deploymentMethod": "create",
+          "codehash": "0x4b600dff103878d67d7c18acc899e208dda034de5a557b51186739e6e1cffff9",
+          "predeployCodehash": "0x4b600dff103878d67d7c18acc899e208dda034de5a557b51186739e6e1cffff9"
+        },
+        "Create3Deployer": {
+          "address": "0x88512893430cd0fC99D8Fa903443829534c7600e",
+          "deployer": "0x612066ec9318250377AF9108F48a375E82e899D0",
+          "deploymentMethod": "create2",
+          "codehash": "0xf0ad66defbe082df243d4d274e626f557f97579c5c9e19f33d8093d6160808b7",
+          "predeployCodehash": "0x73fc31262c4bad113c79439fd231281201c7c7d45b50328bd86bccf37684bf92",
+          "salt": "Create3Deployer"
+        },
+        "AxelarGateway": {
+          "deployer": "0x612066ec9318250377AF9108F48a375E82e899D0",
+          "operator": "0x612066ec9318250377AF9108F48a375E82e899D0",
+          "proxyDeploymentArgs": [
+            "0x7Fb1d1A71FBb04F4E270E5e3A1192DbF72d91aA0",
+            "0x612066ec9318250377AF9108F48a375E82e899D0",
+            "0x000000000000000000000000612066ec9318250377af9108f48a375e82e899d00000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000060000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000003026a00000000000000000000000000000000000000000000000000000000000000001000000000000000000000000014ab6b4ea071c677809c59c396ae26f7af4ba420000000000000000000000000000000000000000000000000000000000000001"
+          ],
+          "initialVerifierSetId": "6af3287c643ff163a408be2788346cdd9d9494e04133eebab113b55ee9491f4e",
+          "address": "0x48CF6E93C4C1b014F719Db2aeF049AA86A255fE2",
+          "implementation": "0x7Fb1d1A71FBb04F4E270E5e3A1192DbF72d91aA0",
+          "implementationCodehash": "0x6413c5978d5dee2bb4aa4555cef0c203f67ead8a38223b2a71ba4dd6c95926bb",
+          "deploymentMethod": "create3",
+          "previousSignersRetention": 15,
+          "domainSeparator": "0x069231ee16189bae59549ea7f4e2141d984279b453d767a618f80088ab2e191c",
+          "minimumRotationDelay": 86400,
+          "salt": "xrpl-evm-sidechain"
+        },
+        "InterchainGovernance": {
+          "address": "0x612066ec9318250377AF9108F48a375E82e899D0"
+        },
+        "Operators": {
+          "owner": "0x612066ec9318250377AF9108F48a375E82e899D0",
+          "address": "0x6b00dbd152F8d0cDB82DB1729f6D099427e071E8",
+          "deployer": "0x612066ec9318250377AF9108F48a375E82e899D0",
+          "deploymentMethod": "create3",
+          "codehash": "0xc561dc32ef670c929db9d7fbf6b5f6c074a62a30602481ba3b88912ca6d79feb",
+          "predeployCodehash": "0xc561dc32ef670c929db9d7fbf6b5f6c074a62a30602481ba3b88912ca6d79feb",
+          "salt": "Operators"
+        },
+        "AxelarGasService": {
+          "collector": "0x6b00dbd152F8d0cDB82DB1729f6D099427e071E8",
+          "salt": "xrpl-evm-sidechain",
+          "address": "0x85b1b47750499B005217CbDcCc874DCFD8578D20",
+          "implementation": "0x6adc82931905e85eCE361206BFD64E189Bd8243B",
+          "deployer": "0x612066ec9318250377AF9108F48a375E82e899D0"
+        },
+        "InterchainTokenService": {
+          "salt": "ITS v0.0.1 xrpl-evm-sidechain devnet-amplifier",
+          "deployer": "0x9159C650e1D7E10a17c450eb3D50778aBA593D61",
+          "proxySalt": "ITS v0.0.1 xrpl-evm-sidechain devnet-amplifier",
+          "tokenManagerDeployer": "0x6A71e027eC83218F121E815c2c0c15386905FE15",
+          "interchainToken": "0xB6376723d4Eac60079Cd2555Cd7C65EBAcD25480",
+          "interchainTokenDeployer": "0x9Be08855310625A7130a5D667f32217aFA4F464A",
+          "tokenManager": "0x353cfdfAF1e899C21C54d54f4F40D3fc623EF0E7",
+          "tokenHandler": "0x59eA045F092e1bd00B3F0A754b93CAC6Ec792567",
+          "gatewayCaller": "0x7479116dcF4bc894cF33A94EA08C0c955e60a993",
+          "implementation": "0x4B043CFAA3EF6d2955c459fE076B90b6492280b6",
+          "predeployCodehash": "0x08a4a556c4db879b4f24104d13a8baf86915d58b12c81b382dfea2a82d2856cf",
+          "address": "0x3C5688654Dd334859C149A5005249828fd608284"
+        },
+        "InterchainTokenFactory": {
+          "deployer": "0x9159C650e1D7E10a17c450eb3D50778aBA593D61",
+          "salt": "ITS Factory v0.0.1 xrpl-evm-sidechain devnet-amplifier",
+          "implementation": "0x6Ebb8851490b5dE7206F3371e666373676972EEf",
+          "address": "0xe70415B0CBfF6A8E612F81Db15795e2E76Aa66De"
+        }
+      }
     }
   },
   "axelar": {
@@ -532,6 +618,19 @@
           "msgIdFormat": "hex_tx_hash_and_event_index",
           "addressFormat": "eip55",
           "address": "axelar1qtg2es55w6zp539a2xh9mnajxqq2rsqghf604muyw85vrn0ky97qyu795s"
+        },
+        "xrpl-evm-sidechain": {
+          "governanceAddress": "axelar1zlr7e5qf3sz7yf890rkh9tcnu87234k6k7ytd9",
+          "serviceName": "validators",
+          "sourceGatewayAddress": "0x48CF6E93C4C1b014F719Db2aeF049AA86A255fE2",
+          "votingThreshold": [
+            "1",
+            "1"
+          ],
+          "blockExpiry": 10,
+          "confirmationHeight": 1,
+          "msgIdFormat": "hex_tx_hash_and_event_index",
+          "address": "axelar1xcw4406vjv7dha4zqqvpu74xytkeafnh5l398e9wa3nf42tzqlnsfw7fqm"
         }
       },
       "Gateway": {
@@ -544,6 +643,9 @@
         },
         "optimism-sepolia": {
           "address": "axelar16wd6350f575t5cts9sduqmt7nsw9kc822ltf6dcn46rvejmmg8cqrq4ara"
+        },
+        "xrpl-evm-sidechain": {
+          "address": "axelar1cvc5u0z9fm6n5gcur3xqz4gmxj4j96vr6j5a099ygjedfpcmh5zqepykg4"
         }
       },
       "MultisigProver": {
@@ -592,6 +694,21 @@
           "keyType": "ecdsa",
           "domainSeparator": "0xf865bf16595139bf568a034d575ffdbdd524dd2dbf8cce1de2ddaf7b964bf8e6",
           "address": "axelar1p0yyfy7f70zdc0ludh6kffjzs8mvun5prdf7nh7s2cgq74g67nmsjcw7t4"
+        },
+        "xrpl-evm-sidechain": {
+          "governanceAddress": "axelar1zlr7e5qf3sz7yf890rkh9tcnu87234k6k7ytd9",
+          "adminAddress": "axelar10vr48fv67jg3tfqzfzy2x7umtyrl6agmhzu8tw",
+          "destinationChainID": "1440002",
+          "signingThreshold": [
+            "1",
+            "1"
+          ],
+          "serviceName": "validators",
+          "verifierSetDiffThreshold": 1,
+          "encoder": "abi",
+          "keyType": "ecdsa",
+          "domainSeparator": "0x069231ee16189bae59549ea7f4e2141d984279b453d767a618f80088ab2e191c",
+          "address": "axelar19pu8hfnwgc0vjhadmvmgz3w4d2g7d7qlg6jjky9y2mf8ea4vf4usj6ramg"
         }
       }
     },

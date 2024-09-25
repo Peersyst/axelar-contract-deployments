@@ -1,0 +1,11 @@
+#!/bin/bash
+AVALANCHE_CHAIN="avalanche-fuji"
+XRPL_EVM_CHAIN="xrpl-evm-sidechain"
+
+SOURCE_CHAIN=$XRPL_EVM_CHAIN
+TOKEN_ID="0xcb04fe953fd6a9e025ea1fa79d9b115d87d7e2a1fbca3db30d12d261fd944ca5"
+DESTINATION_CHAIN=$AVALANCHE_CHAIN
+DESTINATION_ADDRESS="0x9159C650e1D7E10a17c450eb3D50778aBA593D61"
+AMOUNT=1
+
+node evm/its.js -n $SOURCE_CHAIN --action interchainTransfer --tokenId $TOKEN_ID --destinationChain $DESTINATION_CHAIN --destinationAddress $DESTINATION_ADDRESS --amount $AMOUNT

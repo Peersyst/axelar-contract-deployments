@@ -118,3 +118,7 @@ sui/move
 
 # VSCode
 .vscode
+
+.idea
+.axelar/config
+.axelar/data
