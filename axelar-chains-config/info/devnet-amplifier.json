@@ -500,24 +500,24 @@
           "deployer": "0x612066ec9318250377AF9108F48a375E82e899D0"
         },
         "InterchainTokenService": {
-          "salt": "ITS v0.0.1 xrpl-evm-sidechain devnet-amplifier",
+          "salt": "ITS v3.0.0 xrpl-evm-sidechain-devnet-amplifier",
           "deployer": "0x9159C650e1D7E10a17c450eb3D50778aBA593D61",
-          "proxySalt": "ITS v0.0.1 xrpl-evm-sidechain devnet-amplifier",
-          "tokenManagerDeployer": "0x6A71e027eC83218F121E815c2c0c15386905FE15",
-          "interchainToken": "0xB6376723d4Eac60079Cd2555Cd7C65EBAcD25480",
-          "interchainTokenDeployer": "0x9Be08855310625A7130a5D667f32217aFA4F464A",
-          "tokenManager": "0x353cfdfAF1e899C21C54d54f4F40D3fc623EF0E7",
-          "tokenHandler": "0x59eA045F092e1bd00B3F0A754b93CAC6Ec792567",
-          "gatewayCaller": "0x7479116dcF4bc894cF33A94EA08C0c955e60a993",
-          "implementation": "0x4B043CFAA3EF6d2955c459fE076B90b6492280b6",
+          "proxySalt": "ITS v3.0.0 xrpl-evm-sidechain-devnet-amplifier",
+          "tokenManagerDeployer": "0x9bD5d7dcA989Db5958c9e8359dbf6DF8F299E3D7",
+          "interchainToken": "0x7D0A29790E2CB2669e4b5451F9Dc4f2E9518A08a",
+          "interchainTokenDeployer": "0xf9E563d1d0039DB7BA1a60F87AD9870719d1d83a",
+          "tokenManager": "0x1F4117a4060Df2cc8beeF9b99Bf0ba4C639FD345",
+          "tokenHandler": "0x1b26bb27734B774a611ad19e017CF7E66356c43d",
+          "gatewayCaller": "0x7743ef9Da23Ff0A3C02e28ba27D699637dD36088",
+          "implementation": "0x8E0cf8A6719B3eAb56E8faF1243707C6414be484",
           "predeployCodehash": "0x08a4a556c4db879b4f24104d13a8baf86915d58b12c81b382dfea2a82d2856cf",
-          "address": "0x3C5688654Dd334859C149A5005249828fd608284"
+          "address": "0x43F2ccD4E27099b5F580895b44eAcC866e5F7Bb1"
         },
         "InterchainTokenFactory": {
           "deployer": "0x9159C650e1D7E10a17c450eb3D50778aBA593D61",
-          "salt": "ITS Factory v0.0.1 xrpl-evm-sidechain devnet-amplifier",
-          "implementation": "0x6Ebb8851490b5dE7206F3371e666373676972EEf",
-          "address": "0xe70415B0CBfF6A8E612F81Db15795e2E76Aa66De"
+          "salt": "ITS Factory v3.0.0 xrpl-evm-sidechain-devnet-amplifier",
+          "implementation": "0x9b04315b36f7011104B4bD5C7E5d003bb64793E3",
+          "address": "0x83963Dc6F0cd71DaF9532861b06F113A37d0F62f"
         }
       }
     }
